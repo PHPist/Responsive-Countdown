@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>responsive_countdown</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="javascript" src="js/jquery.responsive_countdown.js"></script>
+<style>
+body{
+	margin:0;
+	padding:0;
+	background:#000;
+	}
+.first_countdown{
+	position:relative;
+	width: 100%;
+	margin-top: 100px;
+	}
+</style>
+</head>
+
+<body>
+
+<div class="first_countdown"></div>
+
+
+
+ <script>	
+	$(function() {
+		$(".first_countdown").ResponsiveCountdown({
+		   target_date:"10/10/2014 00:00:00",
+		   time_zone:0,
+		   target_future:true,
+		   set_id:0,
+		   pan_id:0,
+		   day_digits:2,
+		   fillStyleSymbol1:"rgba(0, 0, 0, 1)",
+		   fillStyleSymbol2:"rgba(255, 255, 255, 1)",
+		   fillStylesPanel_g1_1:"rgba(105, 105, 105, 1)",
+		   fillStylesPanel_g1_2:"rgba(255, 255, 255, 1)",
+		   fillStylesPanel_g2_1:"rgba(0, 0, 0, 1)",
+		   fillStylesPanel_g2_2:"rgba(41, 51, 64, 1)",
+		   text_color:"rgba(137, 155, 181, 1)",
+		   text_glow:"rgba(0,0,0,1)",
+		   show_ss:true,show_mm:true,
+		   show_hh:true,show_dd:true,
+		   f_family:"Verdana",show_labels:true,
+		   type3d:"single",
+		   max_height:300,
+		   days_long:"ДНЕЙ",days_short:"dd",
+		   hours_long:"ЧАСОВ",hours_short:"hh",
+		   mins_long:"МИНУТ",mins_short:"mm",
+		   secs_long:"СЕКУНД",secs_short:"ss",
+		   min_f_size:9,
+		   max_f_size:30,
+		   spacer:"none",
+		   groups_spacing:0,
+		   text_blur:0,
+		});		
+
+
+
+	});	
+</script>
+
+</body>
+</html>
